@@ -1,0 +1,109 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    background: #d7e5c8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 800px;
+    height: 1200px;
+}
+
+select, input, .additional-costs p, .total-cost p {
+    display: block;
+    margin: 10px 0;
+}
+.select2-selection--single {
+    padding: 10px 0 !important;
+    height: 100% !important;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.select22{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 14px 0 !important;
+    margin: 0px !important;
+}
+
+label{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 15px 0;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    margin: 0px 0 20px;
+    height: 50px;
+}
+
+.select2-selection__arrow {
+    top: 12px !important;
+}
+.select2-results {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    text-transform: uppercase;
+    padding: 10px 20px;
+    margin: 0% 43%;
+    width: 100px;
+    border-radius: 50px;
+    background-color: #ffc107;
+    color: black;
+    cursor: pointer;
+    font-size: 14px;
+    border: 2px solid #ffc107;
+}
+
+button:hover {
+    background-color: #fff;
+}
+
+.additional-costs, .total-cost {
+    text-align: right;
+}
+
+.prise {
+    font-family: "AvenirNextCyr", Arial, sans-serif;
+    color: #242424;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+p {
+    font-family: "AvenirNextCyr", Arial, sans-serif;
+    color: #242424b3;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+h1 {
+    margin-top: -20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+label {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: 'AvenirNextCyr';
+    src: url('/AvenirNextCyr-Medium.woff') format('woff');
+}

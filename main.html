@@ -1,0 +1,450 @@
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Locco Auto Calculatoк USA</title>
+		<link rel="stylesheet" href="/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css">
+	</head>
+
+	<body>
+		<div class="calculator">
+			<img src="logo.png" alt="">
+			<h1>USA</h1>
+
+			<label for="car-selection">ЛОКАЦІЯ АВТО:</label>
+			<select id="car-selection" class="searchable select22" onchange="calculateTotalCost()">
+				<option value="0">Выберите пункт...</option>
+				<option value="2150">AL ADESA Birmingham</option>
+				<option value="2350">AL Birmingham</option>
+				<option value="2350">AL Dothan</option>
+				<option value="2350">AL Mobile</option>
+				<option value="2350">AL Montgomery</option>
+				<option value="2350">AL Tanner</option>
+				<option value="3490">AL Mobile South</option>
+				<option value="2300">AB - CANAD Edmonton</option>
+				<option value="3350">AB - CANAD Calgary</option>
+				<option value="2350">AR Fayetteville</option>
+				<option value="2325">AR Little Rock</option>
+				<option value="2750">AZ Phoenix</option>
+				<option value="2700">CA ACE Perris</option>
+				<option value="2550">CA ACE Carson</option>
+				<option value="2650">CA ACE Perris 2</option>
+				<option value="2600">CA Anaheim</option>
+				<option value="2450">CA Colton</option>
+				<option value="2700">CA East Bay</option>
+				<option value="2650">CA Fontana</option>
+				<option value="2700">CA Fremont</option>
+				<option value="2550">CA High Desert</option>
+				<option value="2550">CA Los Angeles South</option>
+				<option value="2650">CA North Hollywood</option>
+				<option value="2865">CA Redding</option>
+				<option value="2800">CA Antelope</option>
+				<option value="2600">CA Adelanto</option>
+				<option value="2800">AZ Tucson</option>
+				<option value="2750">CA Bakersfield</option>
+				<option value="2650">CA Fresno</option>
+				<option value="2850">CA Hayward</option>
+				<option value="2730">CA Long Beach</option>
+				<option value="2850">CA Los Angeles</option>
+				<option value="2850">CA Martinez</option>
+				<option value="2850">CA Rancho Cucamonga</option>
+				<option value="2850">CA Sacramento</option>
+				<option value="2850">CA San Bernardino</option>
+				<option value="2800">CA San Diego</option>
+				<option value="2850">CA San Jose</option>
+				<option value="2850">CA So Sacramento</option>
+				<option value="2750">CA Sun Valley</option>
+				<option value="2850">CA Vallejo</option>
+				<option value="2850">CA Van Nuys</option>
+				<option value="2600">CO Denver East</option>
+				<option value="2700">CO Western Colorado</option>
+				<option value="2600">CO Colorado Springs</option>
+				<option value="2850">CO Denver</option>
+				<option value="2600">CO Denver Central</option>
+				<option value="2650">CO Denver South</option>
+				<option value="2250">CT Hartford Springfield</option>
+				<option value="2100">CT Hartford</option>
+				<option value="2100">CT Hartford-South</option>
+				<option value="2250">DC Washington DC</option>
+				<option value="2150">FL Fort Myers</option>
+				<option value="2050">FL Fort Pierce</option>
+				<option value="2050">FL Jacksonville</option>
+				<option value="1950">FL Miami</option>
+				<option value="2200">FL Punta Gorda South</option>
+				<option value="2150">FL Orlando</option>
+				<option value="2200">FL Jacksonville North</option>
+				<option value="2150">FL Clearwater</option>
+				<option value="2200">FL Pensacola</option>
+				<option value="2150">FL Tampa</option>
+				<option value="2200">FL Tampa North</option>
+				<option value="2150">FL Ft. Pierce</option>
+				<option value="2000">FL Jacksonville East</option>
+				<option value="2000">FL Jacksonville West</option>
+				<option value="2200">FL Miami Central</option>
+				<option value="2200">FL Miami North</option>
+				<option value="2200">FL Miami South</option>
+				<option value="2150">FL Ocala</option>
+				<option value="2150">FL Orlando North</option>
+				<option value="2200">FL Orlando South</option>
+				<option value="2150">FL Punta Gorda</option>
+				<option value="2200">FL Tallahassee</option>
+				<option value="2200">FL Tampa South</option>
+				<option value="2250">FL West Palm Beach</option>
+				<option value="2300">DE Seaford</option>
+				<option value="2100">DE New Castle</option>
+				<option value="2200">GA Atlanta</option>
+				<option value="2160">GA Atlanta South</option>
+				<option value="2050">GA Macon</option>
+				<option value="1900">GA Savannah</option>
+				<option value="2150">GA Augusta</option>
+				<option value="2100">GA FAIRBURN</option>
+				<option value="2150">GA Atlanta East</option>
+				<option value="2150">GA Atlanta North</option>
+				<option value="2150">GA Atlanta South</option>
+				<option value="2200">GA Atlanta West</option>
+				<option value="2250">GA Cartersville</option>
+				<option value="1950">GA Savannah</option>
+				<option value="2100">GA Tifton</option>
+				<option value="2400">IA Davenport</option>
+				<option value="2550">IA Des Moines</option>
+				<option value="3350">ID Boise</option>
+				<option value="2350">IL Chicago-West</option>
+				<option value="2450">IL Lincoln</option>
+				<option value="2400">IL St. Louis</option>
+				<option value="2400">IN South Bend</option>
+				<option value="2550">IN Cicero</option>
+				<option value="2550">IN Dyer</option>
+				<option value="2550">IN Fort Wayne</option>
+				<option value="2500">IN Indianapolis South</option>
+				<option value="2350">IL Chicago North</option>
+				<option value="2400">IL Chicago South</option>
+				<option value="2550">IL Peoria</option>
+				<option value="2500">IL Southern Illinois</option>
+				<option value="2500">IL Wheeling</option>
+				<option value="2200">IN HARTFORD CITY</option>
+				<option value="2400">IN Hammond</option>
+				<option value="2500">IN Indianapolis</option>
+				<option value="2500">KY Earlington</option>
+				<option value="2100">KY Lexington</option>
+				<option value="2300">KY Ashland</option>
+				<option value="2300">KY Bowling Green</option>
+				<option value="2350">KY Louisville North</option>
+				<option value="2100">LA Baton Rouge</option>
+				<option value="2100">LA New Orleans</option>
+				<option value="2100">LA Baton Rouge</option>
+				<option value="2100">LA Lafayette</option>
+				<option value="2000">LA New Orleans East</option>
+				<option value="2100">LA Shreveport</option>
+				<option value="2350">KY Lexington East</option>
+				<option value="2400">KY Lexington West</option>
+				<option value="2550">KY Louisville</option>
+				<option value="2500">KY Walton</option>
+				<option value="2350">MA Boston - Shirley</option>
+				<option value="2300">MA Taunton</option>
+				<option value="2350">MA Templeton</option>
+				<option value="2300">MA North Boston</option>
+				<option value="2350">MA South Boston</option>
+				<option value="2350">MA West Warren</option>
+				<option value="2350">ME Lyman</option>
+				<option value="2350">ME Portland - Gorham</option>
+				<option value="2200">MD Elkton</option>
+				<option value="2250">MD Baltimore East</option>
+				<option value="2200">MD Baltimore</option>
+				<option value="2200">MD Dundalk</option>
+				<option value="2150">MD Laurel</option>
+				<option value="2200">MD Metro DC</option>
+				<option value="2050">MD Rosedale</option>
+				<option value="2400">MI Great Lakes</option>
+				<option value="2500">MI Detroit</option>
+				<option value="2550">MI Grand Rapids</option>
+				<option value="2500">MI Flint</option>
+				<option value="2600">MI Ionia</option>
+				<option value="2800">MI Kincheloe</option>
+				<option value="2550">MI Lansing</option>
+				<option value="2400">MN Crashedtoys Minneapolis</option>
+				<option value="2550">MN Minneapolis/St. Paul</option>
+				<option value="2650">MN Minneapolis</option>
+				<option value="2650">MN Minneapolis South</option>
+				<option value="2450">MN Minneapolis North</option>
+				<option value="2400">MN St. Cloud</option>
+				<option value="2350">MO Columbia</option>
+				<option value="2400">MO Sikeston</option>
+				<option value="2550">MO Springfield</option>
+				<option value="2200">MS Jackson</option>
+				<option value="2900">MS Grenada</option>
+				<option value="2150">MS Gulf Coast</option>
+				<option value="2550">MO St. Louis</option>
+				<option value="2050">MO Kansas City EasT</option>
+				<option value="2150">MT Billings</option>
+				<option value="3250">MT Helena</option>
+				<option value="3100">MT Missoula</option>
+				<option value="2350">KS Kansas City Eastast</option>
+				<option value="2550">KS Kansas City</option>
+				<option value="2500">KS Wichita</option>
+				<option value="2150">NC China Grove</option>
+				<option value="2100">NC Asheville</option>
+				<option value="2000">NC Charlotte</option>
+				<option value="2400">NC Greensboro</option>
+				<option value="2150">NC Wilmington</option>
+				<option value="2100">NC Raleigh North</option>
+				<option value="2150">NC Concord</option>
+				<option value="2450">NE Lincoln</option>
+				<option value="2450">NE Omaha</option>
+				<option value="2100">NC Gastonia</option>
+				<option value="2300">NC Lumberton</option>
+				<option value="2320">NC Mocksville</option>
+				<option value="2250">NC Mebane</option>
+				<option value="2200">NC Raleigh</option>
+				<option value="2050">NJ Glassboro West</option>
+				<option value="2050">NJ Avenel New Jersey</option>
+				<option value="2050">NJ Central New Jersey</option>
+				<option value="2000">NJ Northern New Jersey</option>
+				<option value="2000">NJ Southern New Jersey</option>
+				<option value="2200">NJ Port Murray</option>
+				<option value="2050">NJ Sayreville</option>
+				<option value="2100">NJ Englishtown</option>
+				<option value="2050">NJ Glassboro East</option>
+				<option value="2200">NJ Somerville</option>
+				<option value="2100">NJ Trenton</option>
+				<option value="2250">NH Candia</option>
+				<option value="2250">NH Manchester</option>
+				<option value="2950">ND Fargo</option>
+				<option value="3050">ND Bismarck</option>
+				<option value="2550">NM Albuquerque</option>
+				<option value="2800">NV Las Vegas</option>
+				<option value="3100">NV Reno</option>
+				<option value="2150">NY Albany</option>
+				<option value="2250">NY Long Island</option>
+				<option value="2100">NY Newburgh</option>
+				<option value="2450">NY Buffalo</option>
+				<option value="2350">NY Rochester</option>
+				<option value="2350">NY Syracuse</option>
+				<option value="2250">OH Cincinnati-South</option>
+				<option value="2350">OH Akron-Canton</option>
+				<option value="2400">OH Cincinnati</option>
+				<option value="2300">OH Cleveland</option>
+				<option value="2350">OH Cleveland East</option>
+				<option value="2450">OH Cleveland West</option>
+				<option value="2500">OH Columbus</option>
+				<option value="2400">OH Dayton</option>
+				<option value="2500">OK Oklahoma City</option>
+				<option value="2300">OK Tulsa</option>
+				<option value="2235">OR Portland</option>
+				<option value="2750">OR Portland West</option>
+				<option value="3050">OR Eugene</option>
+				<option value="3250">OR Portland North</option>
+				<option value="3000">OR Portland South</option>
+				<option value="2450">PA Pittsburgh West</option>
+				<option value="2300">PA Pittsburgh</option>
+				<option value="2250">PA Bridgeport</option>
+				<option value="2500">PA Erie</option>
+				<option value="2000">PA York Springs</option>
+				<option value="2250">PA Altoona</option>
+				<option value="2250">PA Chambersburg</option>
+				<option value="2200">PA Harrisburg</option>
+				<option value="2150">PA Philadelphia</option>
+				<option value="2100">PA Philadelphia East</option>
+				<option value="2150">PA Pittsburgh East</option>
+				<option value="2400">PA Pittsburgh North</option>
+				<option value="2200">PA Pittsburgh South</option>
+				<option value="2400">PA Scranton</option>
+				<option value="2300">PA York Haven</option>
+				<option value="2250">RI Exeter</option>
+				<option value="2250">RI Providence</option>
+				<option value="2250">TN Chattanooga</option>
+				<option value="2150">TN Knoxville</option>
+				<option value="2200">TN Memphis</option>
+				<option value="2150">TN Nashville</option>
+				<option value="2300">TX Abilene</option>
+				<option value="2400">TX Amarillo</option>
+				<option value="2250">TX Andrews</option>
+				<option value="2050">TX Dallas/Ft. Worth</option>
+				<option value="2250">TX Lubbock</option>
+				<option value="2150">TX Fort Worth North</option>
+				<option value="2200">TX Houston-North</option>
+				<option value="2200">TX Permian Basin</option>
+				<option value="2200">TX San Antonio-South</option>
+				<option value="2100">TX Houston South</option>
+				<option value="2250">TX Houston East</option>
+				<option value="2150">TX Austin</option>
+				<option value="2100">TX Corpus Christi</option>
+				<option value="2100">TX CrashedToys Dallas</option>
+				<option value="2250">TX Dallas</option>
+				<option value="2300">TX Dallas South</option>
+				<option value="2350">TX El Paso</option>
+				<option value="2250">TX Ft. Worth</option>
+				<option value="2200">TX Houston</option>
+				<option value="2100">TX Longview</option>
+				<option value="2000">TX Lufkin</option>
+				<option value="2000">TX McAllen</option>
+				<option value="2250">TX San Antonio</option>
+				<option value="2250">TX Waco</option>
+				<option value="2900">UT Ogden</option>
+				<option value="2950">UT Salt Lake City</option>
+				<option value="2200">VA Richmond East</option>
+				<option value="2300">VA Culpeper</option>
+				<option value="2100">VA Fredericksburg-South</option>
+				<option value="2250">VA Northern Virginia</option>
+				<option value="2150">VA Pulaski</option>
+				<option value="2300">VA Richmond</option>
+				<option value="2350">VA Suffolk</option>
+				<option value="2300">VA Tidewater</option>
+				<option value="2350">VA Fredericksburg</option>
+				<option value="2250">VA Hampton</option>
+				<option value="2100">VA ROANOKE</option>
+				<option value="2450">WI Madison</option>
+				<option value="2600">WI Milwaukee</option>
+				<option value="2600">WI Milwaukee North</option>
+				<option value="2600">WI Madison South</option>
+				<option value="2650">WI Appleton</option>
+				<option value="2600">WI Portage</option>
+				<option value="2950">WY Casper</option>
+				<option value="3250">WA Spokane</option>
+				<option value="3250">WA Seattle</option>
+				<option value="3150">WA Graham</option>
+				<option value="2200">WA North Seattle</option>
+				<option value="3200">WA Pasco</option>
+				<option value="2350">WV Charleston</option>
+				<option value="2350">WV Buckhannon</option>
+				<option value="2450">WV Shady Spring</option>
+				<option value="4450">HI Honolulu</option>
+				<option value="2600">VT Rutland</option>
+				<option value="2350">VT Burlington</option>
+				<option value="2700">SD Sioux Falls</option>
+				<option value="2150">SC North Charleston</option>
+				<option value="2300">SC Spartanburg</option>
+				<option value="2050">SC Charleston</option>
+				<option value="2050">SC Columbia</option>
+				<option value="2050">SC Greenville</option>
+				<option value="2550">QC - CANAD Montreal</option>
+				<option value="2900">NB - CANAD Moncton</option>
+				<option value="2600">ON - CANAD London</option>
+				<option value="2550">ON - CANAD Toronto</option>
+			</select>
+
+			<label for="mzf">ЗбОРИ НА АВТО:</label>
+			<select id="mzf" class="select22" onchange="calculateTotalCost()">
+				<option value="0">Выберите пункт...</option>
+				<option value="50">50-99,99 (50)</option>
+				<option value="90">100-199,99 (90)</option>
+				<option value="135">200-299,99 (135)</option>
+				<option value="137,5">300-349,99 (138)</option>
+				<option value="140">350-399,99 (140)</option>
+				<option value="182,5">400-449,99 (183)</option>
+				<option value="185">450-499,99 (185)</option>
+				<option value="212,5">500-549,99 (213)</option>
+				<option value="215">550-599,99 (215)</option>
+				<option value="245">600-699,99 (245)</option>
+				<option value="270">700-799,99 (270)</option>
+				<option value="295">800-899,99 (295)</option>
+				<option value="325">900-999,99 (325)</option>
+				<option value="385">1000-1199,99 (385)</option>
+				<option value="415">1200-1299,99 (415)</option>
+				<option value="435">1300-1399,99 (435)</option>
+				<option value="455">1400-1499,99 (455)</option>
+				<option value="470">1500-1599,99 (470)</option>
+				<option value="495">1600-1699,99 (495)</option>
+				<option value="510">1700-1799,99 (510)</option>
+				<option value="540">1800-1999,99 (540)</option>
+				<option value="590">2000-2399,99 (590)</option>
+				<option value="605">2400-2499,99 (605)</option>
+				<option value="650">2500-2999,99 (650)</option>
+				<option value="775">3000-3499,99 (775)</option>
+				<option value="850">3500-3999,99 (850)</option>
+				<option value="950">4000-4499,99 (950)</option>
+				<option value="975">4500-4999,99 (975)</option>
+				<option value="1000">5000-7499,99 (1000)</option>
+				<option value="1025">7500-9999,99 (1025)</option>
+				<option value="1050">10.000-14.999,99 (1050)</option>
+				<option value="">15 000 ???? 12% від суми
+				</option>
+			</select>
+
+			<label for="auction-price">ВАРТІСТЬ АВТО НА АУКЦІОНІ:</label>
+			<input type="number" id="auction-price" placeholder="Введите аукционную цену" oninput="calculateTotalCost()">
+
+			<div class="additional-costs">
+				<p>Вартість брокера:<br>
+					<span class="prise">250 $</span>
+				</p>
+				<p>Вигрузка в порту:<br>
+					<span class="prise">450 $</span>
+				</p>
+				<p>Доставка Клайпеда Київ:<br>
+					<span class="prise">1300 $</span>
+				</p>
+				<p>Свіфт Платіж:<br>
+					<span id="swift-payment" class="prise">0 $</span>
+				</p>
+				<p>Послуги компанії:<br>
+					<span class="prise">500 $</span>
+				</p>
+			</div>
+
+			<div class="total-cost">
+				<p>Кінцева вартість авто:
+					<br><span id="total-cost" class="prise">0 $</span>
+				</p>
+			</div>
+
+			<button id="redirect-button" onclick="window.location.href='https://google.com'">Мито</button>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+		<script src="script.js"></script>
+	</body>
+
+	<script>
+		$(document).ready(function () {
+$('.searchable').select2();
+calculateTotalCost();
+});
+
+function calculateTotalCost() {
+const carSelection = document.getElementById('car-selection');
+const mzf = document.getElementById('mzf');
+const auctionPrice = parseFloat(document.getElementById('auction-price').value) || 0;
+const auctionPrice2 = (auctionPrice) * 0.01;
+const carPrice = parseFloat(carSelection.value);
+const carPrice2 = parseFloat(mzf.value);
+const brokerCost = 250;
+const portUnloadCost = 450;
+const deliveryCost = 1300;
+const companyServices = 500;
+
+const swiftPayment = (carPrice + auctionPrice) * 0.027;
+document.getElementById('swift-payment').textContent = `${
+swiftPayment.toFixed(2)
+} $`;
+
+const totalCost = carPrice + carPrice2 + auctionPrice2 + brokerCost + portUnloadCost + deliveryCost + swiftPayment + companyServices;
+animateValue("total-cost", 0, totalCost, 1000);
+}
+
+function animateValue(id, start, end, duration) {
+const obj = document.getElementById(id);
+const range = end - start;
+let startTime = null;
+
+function step(timestamp) {
+if (! startTime) 
+startTime = timestamp;
+
+
+const progress = Math.min((timestamp - startTime) / duration, 1);
+obj.textContent = `${
+(start + range * progress).toFixed(2)
+} $`;
+if (progress < 1) {
+window.requestAnimationFrame(step);
+}
+}
+
+window.requestAnimationFrame(step);
+}
+	</script>
+
+</html>
